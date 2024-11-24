@@ -319,6 +319,13 @@
 		</FilePathRule>
 	</RuleCollection>
 	<RuleCollection Type="Exe" EnforcementMode="Enabled">
+		    <FilePublisherRule Id="90c2b9a4-9ab7-447d-a3e7-4eefeae3c57e" Name="Signed by O=SPLASHTOP INC., L=SAN JOSE, S=CALIFORNIA, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=SPLASHTOP INC., L=SAN JOSE, S=CALIFORNIA, C=US" ProductName="*" BinaryName="*">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
 		<FilePublisherRule Id="0229d798-eb3e-4d9a-ab3c-29ca9a7ceb27" Name="ODBCCONF.EXE, i MICROSOFT® WINDOWS® OPERATING SYSTEM, fra O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
 			<Conditions>
 				<FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT® WINDOWS® OPERATING SYSTEM" BinaryName="ODBCCONF.EXE">
